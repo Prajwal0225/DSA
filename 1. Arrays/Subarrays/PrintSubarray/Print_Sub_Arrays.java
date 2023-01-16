@@ -24,3 +24,5 @@ public class Print_Sub_Arrays {
         printSubarrays(numbers);
     }
 }
+
+// Time Complexity: O(n^3)
