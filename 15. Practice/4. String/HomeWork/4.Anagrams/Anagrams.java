@@ -5,6 +5,7 @@ import java.util.*;
 
 public class Anagrams {
     public static boolean isAnagram(String str1, String str2) {
+
         char[] char1 = str1.toCharArray();
         char[] char2 = str2.toCharArray();
         Arrays.sort(char1);
