@@ -13,7 +13,7 @@ public class BasicOfString {
         // String str = "abcd";
         // String str2 = new String("xyz");
 
-        // //! String are IMMUTABLE ---> Not changable
+        // //! String are IMMUTABLE ---> Not changeable
 
         // Scanner sc = new Scanner(System.in);
         // String name;
@@ -27,17 +27,17 @@ public class BasicOfString {
         // String fullName = "Prajwal Somalkar";
         // System.out.println(fullName.length());
 
-        // concatenation
-        String firstName = "Prajwal";
-        String lastName = "Somalkar";
-        String fullName = firstName + " " + lastName;
+        // // concatenation
+        // String firstName = "Prajwal";
+        // String lastName = "Somalkar";
+        // String fullName = firstName + " " + lastName;
 
-        System.out.println(fullName);
+        // System.out.println(fullName);
 
-        // charAt() Methode
-        System.out.println(fullName.charAt(1));
+        // // charAt() Methode
+        // System.out.println(fullName.charAt(1));
 
-        printLetters(fullName);
+        // printLetters(fullName);
 
         // todo String Comparision
         String s1 = "Prajwal";
@@ -49,8 +49,15 @@ public class BasicOfString {
         } else {
             System.out.println("String are not equal");
         }
-
+        // "==" to check wheather two string are same at objcet level
         if (s1 == s3) {
+            System.out.println("String are epual");
+        } else {
+            System.out.println("String are not equal");
+        }
+
+        // epuals checks only value of strings (interning concept)
+        if (s1.equals(s3)) {
             System.out.println("String are epual");
         } else {
             System.out.println("String are not equal");
