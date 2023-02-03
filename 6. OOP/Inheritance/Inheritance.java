@@ -5,10 +5,10 @@ public class Inheritance {
         Fish shark = new Fish();
         shark.eat();
 
-        Dog dobby = new Dog();
-        dobby.eat();
-        dobby.legs = 4;
-        System.out.println(dobby.legs);
+        // Dog dobby = new Dog();
+        // dobby.eat();
+        // dobby.legs = 4;
+        // System.out.println(dobby.legs);
     }
 }
 /*
