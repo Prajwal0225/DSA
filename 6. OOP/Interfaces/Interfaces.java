@@ -17,19 +17,19 @@ interface ChessPlayer {
 
 class Queen implements ChessPlayer {
     public void moves() {
-        System.out.prinln("up, down, left, right, diagonal (in all 4 dirns)");
+        System.out.println("up, down, left, right, diagonal (in all 4 dirns)");
     }
 }
 
 class Rook implements ChessPlayer {
     public void moves() {
-        System.out.prinln("up, down, left, right");
+        System.out.println("up, down, left, right");
     }
 }
 
 class King implements ChessPlayer {
     public void moves() {
-        System.out.prinln("up, down, left, right, diagonal (in all 4 dirns) -> Only one step at a time");
+        System.out.println("up, down, left, right, diagonal (in all 4 dirns) -> Only one step at a time");
     }
 }
 
