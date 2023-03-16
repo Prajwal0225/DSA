@@ -12,7 +12,7 @@ public class javaCollectionFramwork {
         // 0->1->2
         System.out.println(ll);
 
-        // remove
+        // remove s
         ll.removeLast();
         ll.removeFirst();
         System.out.println(ll);
