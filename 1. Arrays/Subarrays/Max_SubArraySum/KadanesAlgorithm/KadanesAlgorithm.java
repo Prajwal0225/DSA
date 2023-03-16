@@ -12,6 +12,13 @@ public class KadanesAlgorithm {
         System.out.println("our max subarray sum is: " + ms);
     }
 
+
+    //prefix sum problem
+
+
+    //kadan's Algorithm
+    
+
     public static void main(String args[]) {
         int numbers[] = { -2, -3, 4, -1, -2, 1, 5, -3 };
         kadanes(numbers);

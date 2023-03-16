@@ -1,1 +1,2 @@
-System.out.println(l1.size);
+l1.removeFirst();
+        l1.print();

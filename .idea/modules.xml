@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/1. Arrays/1. Arrays.iml" filepath="$PROJECT_DIR$/1. Arrays/1. Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10. ArrayList/10. ArrayList.iml" filepath="$PROJECT_DIR$/10. ArrayList/10. ArrayList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/11. LinkedList/11. LinkedList.iml" filepath="$PROJECT_DIR$/11. LinkedList/11. LinkedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2. Basic_Sorting_Algotirhm/2. Basic_Sorting_Algotirhm.iml" filepath="$PROJECT_DIR$/2. Basic_Sorting_Algotirhm/2. Basic_Sorting_Algotirhm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3. 2DArrays/3. 2DArrays.iml" filepath="$PROJECT_DIR$/3. 2DArrays/3. 2DArrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/15. Practice/4. String/4. String.iml" filepath="$PROJECT_DIR$/15. Practice/4. String/4. String.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4. Strings/4. Strings.iml" filepath="$PROJECT_DIR$/4. Strings/4. Strings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5. Bit_Manipulation/5. Bit_Manipulation.iml" filepath="$PROJECT_DIR$/5. Bit_Manipulation/5. Bit_Manipulation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/6. OOP/6. OOP.iml" filepath="$PROJECT_DIR$/6. OOP/6. OOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7. Recursion/7. Recursion.iml" filepath="$PROJECT_DIR$/7. Recursion/7. Recursion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/8. DivideAndConquer/8. DivideAndConquer.iml" filepath="$PROJECT_DIR$/8. DivideAndConquer/8. DivideAndConquer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/9. Backtracking/9. Backtracking.iml" filepath="$PROJECT_DIR$/9. Backtracking/9. Backtracking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/1. Arrays/Basic_Questions/Basic_Questions.iml" filepath="$PROJECT_DIR$/1. Arrays/Basic_Questions/Basic_Questions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DSA_Java.iml" filepath="$PROJECT_DIR$/.idea/DSA_Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/15. Practice/4. String/HomeWork/HomeWork.iml" filepath="$PROJECT_DIR$/15. Practice/4. String/HomeWork/HomeWork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/1. Arrays/IMP_Questions/IMP_Questions.iml" filepath="$PROJECT_DIR$/1. Arrays/IMP_Questions/IMP_Questions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/1. Arrays/Subarrays/Max_SubArraySum/Max_SubArraySum.iml" filepath="$PROJECT_DIR$/1. Arrays/Subarrays/Max_SubArraySum/Max_SubArraySum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4. Strings/Questions/Questions.iml" filepath="$PROJECT_DIR$/4. Strings/Questions/Questions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3. 2DArrays/Questions/Questions1.iml" filepath="$PROJECT_DIR$/3. 2DArrays/Questions/Questions1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5. Bit_Manipulation/Questions/Questions2.iml" filepath="$PROJECT_DIR$/5. Bit_Manipulation/Questions/Questions2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10. ArrayList/Questions/Questions3.iml" filepath="$PROJECT_DIR$/10. ArrayList/Questions/Questions3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/1. Arrays/Searching_in_array/Searching_in_array.iml" filepath="$PROJECT_DIR$/1. Arrays/Searching_in_array/Searching_in_array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/1. Arrays/Subarrays/Subarrays.iml" filepath="$PROJECT_DIR$/1. Arrays/Subarrays/Subarrays.iml" />
+    </modules>
+  </component>
+</project>

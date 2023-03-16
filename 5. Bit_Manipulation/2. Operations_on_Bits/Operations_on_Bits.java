@@ -1,4 +1,5 @@
 public class Operations_on_Bits {
+
     public static int getIthBit(int n, int i) {
         int bitMask = 1 << i;
         if ((n & bitMask) == 0) {
