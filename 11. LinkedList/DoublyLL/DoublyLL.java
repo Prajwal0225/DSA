@@ -1,4 +1,4 @@
-public class DoublyLL {
+public class DOublyLL {
     public class Node {
         int data;
         Node next;
@@ -54,32 +54,73 @@ public class DoublyLL {
             System.out.print(temp.data + " <-> ");
             temp = temp.next;
         }
-        System.out.printl
+        System.out.println();
+    }
 
-        //! Homework
-        //! Add last
-        //! remove last 
-        
-        tatic
+    // ! Homework
+    // ! Add last
+    public void addlast(int data) {
+        Node newNode = new Node(data);
+        size++;
+        if (head == null) {
+            head = tail = newNode;
+            return;
+        }
+        tail.next = newNode;
+        newNode.prev = tail;
+        tail = newNode;
+    }
 
-    void main(S
-    Ddd.addFirst(3);
+    // ! remove last
+    public int removeLast() {
+        if (head == null) {
+            System.out.println("DLL is empty");
+            return Integer.MIN_VALUE;
+        }
+        if (size == 1) {
+            int val = head.data;
+            head = tail = null;
+            size--;
+            return val;
+        }
+        int val = tail.data;
+        tail = tail.prev;
+        tail.next = null;
+        size--;
+        return val;
+    }
+
+    // DoublyLL reverse
+    public void reverse() {
+        Node curr = head;
+        Node prev = null;
+        Node next;
+
+        while (curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            curr.prev = next;
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+    }
+
+    public static void main(String args[]) {
+        DOublyLL dd = new DOublyLL();
+        dd.addFirst(3);
 
         dd.addFirst(2);
         dd.addFirst(1);
+        dd.addlast(4);
 
         dd.print();
         System.out.println(dd.size);
-        dd.removeFirst();
+        // dd.removeFirst();
+        dd.removeLast();
+        dd.print();
+        dd.reverse();
         dd.print();
     }
 
 }
-
-    
-
-    
-
-    
-
-    
