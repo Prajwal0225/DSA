@@ -34,7 +34,7 @@ public class CircularQueueUsingArray {
             arr[rear] = data;
         }
 
-        // remove -> O(n)
+        // remove -> O(1)
         public static int remove() {
             if (isEmpty()) {
                 System.out.println("empty queue");
