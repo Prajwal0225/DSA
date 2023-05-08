@@ -1,0 +1,1 @@
+map.put(arr[i], map.getOrDefault(arr[i], 0) + 1);
