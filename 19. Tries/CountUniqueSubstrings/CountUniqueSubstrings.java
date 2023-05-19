@@ -1,4 +1,6 @@
-public class WordBreakProblem {
+import javax.print.attribute.standard.RequestingUserName;
+
+public class CountUniqueSubstrings {
     static class Node {
         Node children[] = new Node[26]; // 'a' - 'z'
         boolean eow = false;
@@ -37,27 +39,29 @@ public class WordBreakProblem {
 
     }
 
-    public static boolean wordBreak(String key) {
-        if (key.length() == 0) {
-            return true;
+    public static int countNodes(Node root) {
+        if (root == null) {
+            return 0;
         }
-        for (int i = 1; i <= key.length(); i++) {
-            // sunstring(beging idx,last idx)
-            if (search(key.substring(0, i)) && wordBreak(key.substring(i))) {
-                return true;
+
+        int count = 0;
+        for (int i = 0; i < 26; i++) {
+            if (root.children[i] != null) {
+                count += countNodes(root.children[i]);
             }
+
         }
-        return false;
+        return count + 1;
     }
 
     public static void main(String args[]) {
-        String arr[] = { "i", "like", "sam", "samsung", "mobile", "ice" };
+        String str = "ababa";
 
-        for (int i = 0; i < arr.length; i++) {
-            insert(arr[i]);
+        // suffix -> insert in trie
+        for (int i = 0; i < str.length(); i++) {
+            String suffix = str.substring(i);
+            insert(suffix);
         }
-
-        String key = "ilikesamsung";
-        System.out.println(wordBreak(key));
+        System.out.println(countNodes(root));
     }
 }
