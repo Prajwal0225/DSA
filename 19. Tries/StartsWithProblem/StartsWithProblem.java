@@ -1,4 +1,4 @@
-public class WordBreakProblem {
+public class StartsWithProblem {
     static class Node {
         Node children[] = new Node[26]; // 'a' - 'z'
         boolean eow = false;
@@ -37,27 +37,29 @@ public class WordBreakProblem {
 
     }
 
-    public static boolean wordBreak(String key) {
-        if (key.length() == 0) {
-            return true;
-        }
-        for (int i = 1; i <= key.length(); i++) {
-            // sunstring(beging idx,last idx)
-            if (search(key.substring(0, i)) && wordBreak(key.substring(i))) {
-                return true;
+    public static boolean startsWith(String prefix) {
+        Node curr = root;
+
+        for (int i = 0; i < prefix.length(); i++) {
+            int idx = prefix.charAt(i) - 'a';
+            if (curr.children[idx] == null) {
+                return false;
             }
+            curr = curr.children[idx];
         }
-        return false;
+        return true;
     }
 
     public static void main(String args[]) {
-        String arr[] = { "i", "like", "sam", "samsung", "mobile", "ice" };
+        String words[] = { "apple", "app", "mango", "woman" };
+        String prefix1 = "app";
+        String prefix2 = "man";
 
-        for (int i = 0; i < arr.length; i++) {
-            insert(arr[i]);
+        for (int i = 0; i < words.length; i++) {
+            insert(words[i]);
         }
 
-        String key = "ilikesamsung";
-        System.out.println(wordBreak(key));
+        System.out.println(startsWith(prefix1));
+        System.out.println(startsWith(prefix2));
     }
 }
