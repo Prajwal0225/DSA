@@ -2,7 +2,7 @@ import javax.xml.crypto.dsig.keyinfo.RetrievalMethod;
 
 public class Implementation {
     static class Node {
-        Node children[] = new Node[26];
+        Node children[] = new Node[26];  //'a' - 'z'
         boolean eow = false;
 
         Node() {

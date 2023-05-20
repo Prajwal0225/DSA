@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class DFS {
+public class ConnectedComponent {
     static class Edge {
         int scr;
         int dest;
@@ -42,9 +42,17 @@ public class DFS {
         graph[6].add(new Edge(6, 5, 1));
     }
 
-    public static void bfs(ArrayList<Edge>[] graph) { // O(V+E)
-        Queue<Integer> q = new LinkedList<>();
+    public static void bfs(ArrayList<Edge>[] graph) {
         boolean vis[] = new boolean[graph.length];
+        for (int i = 0; i < graph.length; i++) {
+            if (!vis[i]) {
+                bfsUtil(graph, vis);
+            }
+        }
+    }
+
+    public static void bfsUtil(ArrayList<Edge>[] graph, boolean vis[]) { // O(V+E)
+        Queue<Integer> q = new LinkedList<>();
         q.add(0); // source = 0
 
         while (!q.isEmpty()) {
@@ -61,8 +69,17 @@ public class DFS {
         }
     }
 
+    public static void dfs(ArrayList<Edge>[] graph) {
+        boolean vis[] = new boolean[graph.length];
+        for (int i = 0; i < graph.length; i++) {
+            if (!vis[i]) {
+                bfsUtil(graph, i, vis);
+            }
+        }
+    }
+
     // O(V+E)
-    public static void dfs(ArrayList<Edge>[] graph, int curr, boolean vis[]) { 
+    public static void dfsUtil(ArrayList<Edge>[] graph, int curr, boolean vis[]) {
         // visit
         System.out.print(curr + " ");
         vis[curr] = true;
@@ -70,7 +87,7 @@ public class DFS {
         for (int i = 0; i < graph[curr].size(); i++) {
             Edge e = graph[curr].get(i);
             if (!vis[e.dest]) {
-                dfs(graph, e.dest, vis);
+                dfsUtil(graph, curr, vis);
             }
         }
     }

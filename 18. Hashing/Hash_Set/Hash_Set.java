@@ -33,6 +33,8 @@ public class Hash_Set {
 
         // System.out.println(set.isEmpty());
 
+
+        //Iterating over HashSet
         HashSet<String> cities = new HashSet<>();
 
         cities.add("Delhi");
@@ -40,10 +42,18 @@ public class Hash_Set {
         cities.add("Gadchiroli");
         cities.add("Aurangabad");
 
+        //Using Iterator
         Iterator it = cities.iterator();
         while (it.hasNext()) {
             System.out.println(it.next());
         }
+
+        //Using for loop
+        for(String city:cities){
+            System.out.println(city);
+        }
+
+
 
     }
 }
