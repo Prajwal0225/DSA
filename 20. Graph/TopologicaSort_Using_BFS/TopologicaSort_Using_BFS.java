@@ -49,20 +49,19 @@ public class TopologicaSort_Using_BFS {
                 q.add(i);
             }
         }
-
         // bfs
         while (!q.isEmpty()) {
             int curr = q.remove();
             System.out.print(curr + " ");
-
-            for (int i = 0; i < graph[curr].size(); i++) {
-                Edge e = graph[curr].get(i);
+            for (int j = 0; j < graph[curr].size(); j++) {
+                Edge e = graph[curr].get(j);
                 indeg[e.dest]--;
                 if (indeg[e.dest] == 0) {
                     q.add(e.dest);
                 }
             }
         }
+
         System.out.println();
     }
 
