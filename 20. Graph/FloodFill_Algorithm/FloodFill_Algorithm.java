@@ -3,20 +3,21 @@ import java.util.*;
 public class FloodFill_Algorithm {
 
     // O(m*n)
-    public int [][] helper(int [][] image,int sr,int sc,int color,boolean vis[][],int orgCol){
+    public void helper(int[][] image, int sr, int sc, int color, boolean vis[][], int orgCol) {
 
-        if(sr<0 || sc<0 || sr >= image.length || sc>= image[0].length || vis[sr][sc] || image[sr][sc] != orgCol){
+        if (sr < 0 || sc < 0 || sr >= image.length || sc >= image[0].length || vis[sr][sc] || image[sr][sc] != orgCol) {
             return;
         }
         image[sr][sc] = color;
-        //left
-        helper(image, sr, sc-1, color, vis, orgCol)
-        //right
-        helper(image, sr, sc+1, color, vis, orgCol)
-        //up
-        helper(image, sr-1, sc, color, vis, orgCol)
-        //down
-        helper(image, sr+1, sc, color, vis, orgCol)
+        vis[sr][sc] = true;
+        // left
+        helper(image, sr, sc - 1, color, vis, orgCol);
+        // right
+        helper(image, sr, sc + 1, color, vis, orgCol);
+        // up
+        helper(image, sr - 1, sc, color, vis, orgCol);
+        // down
+        helper(image, sr + 1, sc, color, vis, orgCol);
     }
 
     public int[][] floodFill(int[][] image, int sr, int sc, int color) {
