@@ -80,7 +80,7 @@ public class Kosarajus_Algorithm {
             int curr = s.pop();
             if (!vis[curr]) {
                 System.out.print("SCC -> ");
-                dfs(transpose, curr, vis); // Pass 'transpose' instead of 'graph'
+                dfs(transpose, curr, vis);
                 System.out.println();
             }
         }
