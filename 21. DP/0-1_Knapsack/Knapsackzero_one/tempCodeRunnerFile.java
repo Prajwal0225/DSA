@@ -1,1 +1,1 @@
-knapsackMemoization
+knapsackTab

@@ -43,6 +43,38 @@ public class Knapsackzero_one {
         }
     }
 
+    // Tabulation DP
+    public static int knapsackTab(int val[], int wt[], int W) {
+        int n = val.length;
+        int dp[][] = new int[n + 1][W + 1];
+        for (int i = 0; i < dp.length; i++) {// oth col
+            dp[i][0] = 0;
+        }
+        for (int j = 0; j < dp[0].length; j++) {// oth col
+            dp[0][j] = 0;
+        }
+
+        for (int i = 1; i < n + 1; i++) {
+            for (int j = 1; j < W + 1; j++) {
+                int v = val[i - 1]; // ith item val
+                int w = wt[i - 1]; // ith item wt
+
+                if (w <= j) { // valid
+                    // include
+                    int incProfit = v + dp[i - 1][j - w];
+                    // exclude
+                    int excProfit = dp[i - 1][j];
+                    dp[i][j] = Math.max(incProfit, excProfit);
+                } else { // invalid
+                    int excProfit = dp[i - 1][j];
+                    dp[i][j] = excProfit;
+                }
+            }
+        }
+
+        return dp[n][W];
+    }
+
     public static void main(String args[]) {
         int val[] = { 15, 14, 10, 45, 30 };
         int wt[] = { 2, 5, 1, 3, 4 };
@@ -53,6 +85,6 @@ public class Knapsackzero_one {
                 dp[i][j] = -1;
             }
         }
-        System.out.println(knapsackMemoization(val, wt, W, val.length, dp));
+        System.out.println(knapsackTab(val, wt, W));
     }
 }
